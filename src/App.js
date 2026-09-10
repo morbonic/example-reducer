@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  if (!state.isActive && action.type !== "open") return initialState;
+  if (!state.isActive && action.type !== "openAccount") return initialState;
 
   switch (action.type) {
     case "openAccount":
